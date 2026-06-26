@@ -6,7 +6,6 @@ let alunos = [
     { nome: "Eva", nota: 9 }
 ];
 
-// map() adicionando a situação
 let alunosComSituacao = alunos.map(aluno => {
     return {
         nome: aluno.nome,
@@ -17,12 +16,10 @@ let alunosComSituacao = alunos.map(aluno => {
 
 console.log("Alunos com situação:", alunosComSituacao);
 
-// filter() para aprovados
 let aprovados = alunosComSituacao.filter(aluno => aluno.situacao === "Aprovado");
 
 console.log("Quantidade de aprovados:", aprovados.length);
 
-// média geral da turma
 let somaNotas = alunos.reduce((total, aluno) => total + aluno.nota, 0);
 let media = somaNotas / alunos.length;
 
