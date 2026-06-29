@@ -1,26 +1,22 @@
 const input = require("readline-sync")
 
 function somar(a, b) {
-    let c = a + b
-    return c;
+    return a+b;
 }
 
 function subtrair(a, b) {
-    let c = a - b
-    return c;
+    return a-b;
 }
 
 function multiplicar(a, b) {
-    let c = a * b
-    return c;
+    return a*b
 }
 
 function dividir(a, b) {
     if (b === 0) {
         return "Erro: divisão por zero";
     }
-    c = a / b
-    return c;
+    return a / b;
 }
 
 let a = input.questionInt("digite um valor = ")
