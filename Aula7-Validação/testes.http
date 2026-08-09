@@ -1,0 +1,27 @@
+### Listar todos os produtos
+GET http://localhost:3000/produtos
+
+
+### Buscar produto por ID
+GET http://localhost:3000/produtos/1
+
+### Post novo produto
+POST http://localhost:3000/produtos/produtoNovo
+Content-Type: application/json
+
+{
+    "nome": "Fone",
+    "preco": 32.99
+    }
+
+### Put atualizando
+PUT http://localhost:3000/produtos/1
+Content-Type: application/json
+
+{
+    "nome": "PC Gamer com RTX 8090 e Amd ryzen 9 22000X3D",
+    "preco": 8000
+}
+
+### Deletando informação
+DELETE http://localhost:3000/produtos/2
